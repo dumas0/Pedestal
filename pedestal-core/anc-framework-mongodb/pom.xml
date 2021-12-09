@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>pedestatl-core</artifactId>
+        <groupId>com.dumas.anc</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>anc-framework-mongodb</artifactId>
+    <name>anc-framework-mongodb</name>
+    <version>${anc.version}</version>
+    <description>
+        SpringBoot集成mongodb
+    </description>
+
+    <dependencies>
+        <!-- mongodb -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

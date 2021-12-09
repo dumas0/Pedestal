@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.dumas.pedestal</groupId>
+        <artifactId>pedestal</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>pedestal-infrastructure</artifactId>
+    <packaging>pom</packaging>
+    <name>pedestal-infrastructure</name>
+    <version>1.0.0-SNAPSHOT</version>
+    <description>
+        基础设施服务模块
+    </description>
+
+    <modules>
+        <module>pedestal-api-gateway</module>
+        <module>pedestal-config-center</module>
+        <module>pedestal-discovery</module>
+        <module>pedestal-inf-jobs-scheduler</module>
+        <module>pedestal-inf-oss</module>
+        <module>pedestal-inf-push-center</module>
+        <module>pedestal-inf-report-center</module>
+        <module>pedestal-tracing</module>
+    </modules>
+
+</project>

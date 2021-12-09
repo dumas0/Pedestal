@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.dumas.anc</groupId>
+        <artifactId>anc-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>./anc-parent</relativePath>
+    </parent>
+
+    <artifactId>pedestatl-core</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>pedestatl-core</name>
+    <description>
+        应用核心模块项目
+    </description>
+
+    <modules>
+        <!-- 包依赖管理 -->
+        <module>anc-parent</module>
+        <module>anc-common-util</module>
+        <module>anc-framework-logger</module>
+        <!-- 公共模块 -->
+        <module>anc-common-model</module>
+        <!-- 基础框架模块 -->
+        <module>anc-framework-cache</module>
+        <module>anc-framework-mongodb</module>
+        <module>anc-framework-mq</module>
+        <module>anc-framework-springboot</module>
+        <module>anc-framework-mybatis</module>
+        <module>anc-framework-feign</module>
+        <module>anc-framework-springboot-web</module>
+        <module>anc-framework-validation</module>
+        <module>anc-framework-config-center</module>
+        <module>anc-framework-discovery</module>
+        <module>anc-framework-swagger</module>
+    </modules>
+</project>

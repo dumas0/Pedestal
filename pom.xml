@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.dumas.anc</groupId>
+        <artifactId>pedestatl-core</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>./pedestal-core</relativePath>
+    </parent>
+
+    <groupId>com.dumas.pedestal</groupId>
+    <artifactId>pedestal</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>pedestal</name>
+    <packaging>pom</packaging>
+    <description>
+        Pedestal Project
+    </description>
+
+    <modules>
+        <module>pedestal-infrastructure</module>
+        <module>pedestal-micro-service</module>
+        <module>pedestal-tool</module>
+        <module>pedestal-share</module>
+        <module>resource</module>
+    </modules>
+
+</project>

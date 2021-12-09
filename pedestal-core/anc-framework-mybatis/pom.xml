@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>pedestatl-core</artifactId>
+        <groupId>com.dumas.anc</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>anc-framework-mybatis</artifactId>
+    <name>anc-framework-mybatis</name>
+    <version>${anc.version}</version>
+    <packaging>jar</packaging>
+    <description>
+        数据库查询层框架封装
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.dumas.anc</groupId>
+            <artifactId>anc-common-model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+        </dependency>
+        <!--对应mysql 5.XX版本-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-crypto</artifactId>
+        </dependency>
+        <!-- 对应mysql 8.XX版本-->
+        <!-- <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.11</version>
+            <scope>runtime</scope>
+        </dependency> -->
+    </dependencies>
+
+</project>

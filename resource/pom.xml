@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.dumas.pedestal</groupId>
+        <artifactId>pedestal</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>pedestal-res</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>pedestal-res</name>
+    <description>
+        公共资源类模块
+    </description>
+
+    <properties>
+        <!-- 文件拷贝时的编码 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- 编译时的编码 -->
+        <maven.compiler.encoding>UTF8</maven.compiler.encoding>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.compilerVersion>1.7</maven.compiler.compilerVersion>
+        <!-- maven获取日期 -->
+        <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
+        <timestamp>${maven.build.timestamp}</timestamp>
+    </properties>
+
+    <build>
+        <plugins>
+            <!-- 使用assembly插件打成zip -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <!-- 指定assembly配置文件路径 -->
+                    <descriptor>src/assembly/assembly.xml</descriptor>
+                    <finalName>cg-${maven.build.timestamp}</finalName>
+                </configuration>
+                <executions>
+                    <execution>
+                        <!-- 在执行package打包时，执行assembly:single -->
+                        <phase>package</phase>
+                        <goals>
+                            <!-- 在执行assembly一次 -->
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

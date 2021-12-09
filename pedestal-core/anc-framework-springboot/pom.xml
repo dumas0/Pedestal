@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>pedestatl-core</artifactId>
+        <groupId>com.dumas.anc</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>anc-framework-springboot</artifactId>
+    <name>anc-framework-springboot</name>
+    <version>${anc.version}</version>
+    <packaging>jar</packaging>
+    <description>
+        Springboot基础框架封装
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-actuator-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.github.classgraph</groupId>
+            <artifactId>classgraph</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.dumas.anc</groupId>
+            <artifactId>anc-common-util</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.dumas.anc</groupId>
+            <artifactId>anc-common-model</artifactId>
+        </dependency>
+    </dependencies>
+</project>

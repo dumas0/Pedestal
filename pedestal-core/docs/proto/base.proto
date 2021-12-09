@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.dumas.pedestal.common.model.proto.base";
+option java_outer_classname = "WebProto";
+import "google/protobuf/any.proto";
+
+/* 基础数据模型封装 */
+
+/* 通用返回: 默认所有返回都包装一层通用返回，Response 放在 data 域 */
+message R {
+  string code = 1;
+  string msg = 2;
+  google.protobuf.Any data = 3;
+}
+
+/* 通用分页返回 */
+message PageVO {
+  int64 total = 1;// 总行数
+  int32 pageSize = 2; // 每页大小
+  int32 pageNo = 3;  // 当前页
+  repeated google.protobuf.Any row = 9;// 分页列表
+}
+
+/* 通用列表返回 */
+message ListVO {
+  repeated google.protobuf.Any row = 9;// 分页列表
+}
