@@ -51,7 +51,7 @@ public class NumberIn2DArraySolution {
      * 牛客JZ1
      */
     public static boolean find(int[][] array, int target){
-        if(array == null && array.length == 0){
+        if(array == null || array.length == 0){
             return false;
         }
         int m = array.length - 1;
