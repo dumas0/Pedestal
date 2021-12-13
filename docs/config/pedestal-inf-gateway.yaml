@@ -1,0 +1,40 @@
+server:
+  port: 9191
+#cors settings
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            #            allowedOrigins: "https://dumas.cn"
+            allowedOrigins: "*"
+            allowedHeaders:
+              - x-token
+              - x-client-type
+              - x-device-id
+            allowedMethods:
+              - GET
+              - PUT
+              - POST
+              - OPTION
+              - HEAD
+              - DELETE
+      # routes
+      routes:
+        - id: acc_route
+          uri: lb://pedestal-ms-service
+          predicates:
+            - Path=/**
+
+#/actuator/gateway/routes
+management:
+  endpoints:
+    web:
+      exposure:
+        include: gateway
+  endpoint:
+    gateway:
+      enabled: true
+    health:
+      show-details: always

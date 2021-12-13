@@ -4,7 +4,7 @@
     <springProperty scope="context" name="LOG_CONTEXT_NAME" source="spring.application.name"/>
     <!-- 配置日志路径 -->
     <springProperty scope="context" name="LOG_PATH" source="log.path"/>
-    <property scope="context" name="DEF_PATH" value="./cg/logs/"/>
+    <property scope="context" name="DEF_PATH" value="./pedestal/logs/"/>
     <property scope="context" name="BUSINESS_DIR" value="/business"/>
     <property scope="context" name="EVENT_LOG_DIR" value="/event"/>
     <!-- 配置根日志级别 -->

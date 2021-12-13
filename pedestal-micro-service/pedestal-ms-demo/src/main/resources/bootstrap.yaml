@@ -1,7 +1,7 @@
 #全局项目整体配置
 spring:
   application:
-    name: pedestal-ms-crawler
+    name: pedestal-ms-demo
 
   cloud:
     nacos:

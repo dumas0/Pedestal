@@ -40,7 +40,7 @@
                 <configuration>
                     <!-- 指定assembly配置文件路径 -->
                     <descriptor>src/assembly/assembly.xml</descriptor>
-                    <finalName>cg-${maven.build.timestamp}</finalName>
+                    <finalName>pedestal-${maven.build.timestamp}</finalName>
                 </configuration>
                 <executions>
                     <execution>

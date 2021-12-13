@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      username: root
+      password: root
+      host: 127.0.0.1
+      port: 27017
+      # 如果设置了密码则必须指定认证数据库
+      authentication-database: admin
+      database: pedestal

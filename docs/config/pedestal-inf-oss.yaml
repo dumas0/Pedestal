@@ -1,0 +1,12 @@
+server:
+  port: 9098
+filesys:
+  root-path: /data/www/ROOT/www.dumas.cn
+  access-host: https://res-dumas.cn
+  # root-path: classpath://file
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 500MB
