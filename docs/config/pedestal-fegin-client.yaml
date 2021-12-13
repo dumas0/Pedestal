@@ -1,0 +1,35 @@
+feign:
+  okhttp:
+    enabled: true
+  hystrix:
+    enabled: true
+  client:
+    config:
+      default:
+        #connectTimeout: 5000
+        #readTimeout: 1000
+        # open retry
+        retryer: feign.Retryer.Default
+
+hystrix:
+  threadpool:
+    default:
+      coreSize: 200 ##并发执行的最大线程数，默认10
+      maxQueueSize: 200 ##BlockingQueue的最大队列数
+      queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          strategy: THREAD
+          semaphore:
+            maxConcurrentRequests: 1000
+          thread:
+            timeoutInMilliseconds: 30000
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            # rpc-timeout
+            timeoutInMilliseconds: 10000
