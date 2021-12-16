@@ -1,4 +1,4 @@
-package com.dumas.pedestal.ms.algorithm.linkedlist;
+package com.dumas.pedestal.ms.algorithm.linklist;
 
 /**
  * @author dumas

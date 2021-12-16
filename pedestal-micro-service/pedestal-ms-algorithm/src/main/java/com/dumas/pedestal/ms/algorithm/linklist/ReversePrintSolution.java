@@ -1,4 +1,4 @@
-package com.dumas.pedestal.ms.algorithm.linkedlist;
+package com.dumas.pedestal.ms.algorithm.linklist;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
