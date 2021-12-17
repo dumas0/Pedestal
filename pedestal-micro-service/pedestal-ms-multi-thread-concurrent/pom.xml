@@ -5,23 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.dumas.pedestal</groupId>
-        <artifactId>pedestal</artifactId>
+        <artifactId>pedestal-micro-service</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>pedestal-micro-service</artifactId>
+    <artifactId>pedestal-ms-multi-thread-concurrent</artifactId>
     <packaging>pom</packaging>
-    <name>pedestal-micro-service</name>
+    <name>pedestal-ms-multi-thread-concurrent</name>
     <version>1.0.0-SNAPSHOT</version>
     <description>
-        应用层模块
+        多线程并发模块
     </description>
-
-    <modules>
-        <module>pedestal-ms-demo</module>
-        <module>pedestal-ms-algorithm</module>
-        <module>pedestal-ms-multi-thread-concurrent</module>
-        <module>pedestal-ms-crawler</module>
-    </modules>
-
 </project>
