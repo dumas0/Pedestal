@@ -1,4 +1,4 @@
-package java.com.dumas.pedestal.framework.feign.config;
+package com.dumas.pedestal.framework.feign.config;
 
 /**
  * TODO

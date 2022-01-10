@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 public class EventLogger {
     private static Logger EVENT_LOGGER = LoggerFactory.getLogger(EventLogger.class);
 
-    private static Logger getLogger() {
+    public static Logger getLogger() {
         return EVENT_LOGGER;
     }
 }

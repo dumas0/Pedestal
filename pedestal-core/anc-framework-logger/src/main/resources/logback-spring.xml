@@ -226,7 +226,7 @@
     </springProfile>
     <!-- 开发环境 -->
     <springProfile name="dev">
-        <logger name="com.dumas.pedestal.infrastructure.logger.config.BusinessLogger" level="INFO" additivity="false">
+        <logger name="com.dumas.pedestal.framework.logger.BusinessLogger" level="INFO" additivity="false">
             <appender-ref ref="BUSINESS_FILE"/>
         </logger>
         <logger name="com.dumas.pedestal.framework.logger.EventLogger" level="INFO" additivity="false">
@@ -257,7 +257,7 @@
     </springProfile>
     <!-- 测试环境 -->
     <springProfile name="test">
-        <logger name="com.dumas.pedestal.infrastructure.logger.config.BusinessLogger" level="INFO" additivity="false">
+        <logger name="com.dumas.pedestal.framework.logger.BusinessLogger" level="INFO" additivity="false">
             <appender-ref ref="BUSINESS_FILE"/>
         </logger>
         <logger name="com.dumas.pedestal.framework.logger.EventLogger" level="INFO" additivity="false">
@@ -292,7 +292,7 @@
     </springProfile>
     <!-- pre环境 -->
     <springProfile name="pre">
-        <logger name="com.dumas.pedestal.infrastructure.logger.config.BusinessLogger" level="INFO" additivity="false">
+        <logger name="com.dumas.pedestal.framework.logger.BusinessLogger" level="INFO" additivity="false">
             <appender-ref ref="BUSINESS_FILE"/>
         </logger>
         <logger name="com.dumas.pedestal.framework.logger.EventLogger" level="INFO" additivity="false">
@@ -327,7 +327,7 @@
     </springProfile>
     <!-- uat环境 -->
     <springProfile name="uat">
-        <logger name="com.dumas.pedestal.infrastructure.logger.config.BusinessLogger" level="INFO" additivity="false">
+        <logger name="com.dumas.pedestal.framework.logger.BusinessLogger" level="INFO" additivity="false">
             <appender-ref ref="BUSINESS_FILE"/>
         </logger>
         <logger name="com.dumas.pedestal.framework.logger.EventLogger" level="INFO" additivity="false">
@@ -365,7 +365,7 @@
         <appender name="ASYNC_ALL_FILE" class="ch.qos.logback.classic.AsyncAppender">
             <appender-ref ref="ALL_FILE"/>
         </appender>
-        <logger name="com.dumas.pedestal.infrastructure.logger.config.BusinessLogger" level="INFO" additivity="false">
+        <logger name="com.dumas.pedestal.framework.logger.BusinessLogger" level="INFO" additivity="false">
             <appender-ref ref="BUSINESS_FILE"/>
         </logger>
         <logger name="com.dumas.pedestal.framework.logger.EventLogger" level="INFO" additivity="false">
