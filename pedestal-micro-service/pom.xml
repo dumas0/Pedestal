@@ -18,8 +18,8 @@
     </description>
 
     <modules>
-        <module>pedestal-ms-algorithm</module>
         <module>pedestal-ms-demo</module>
+        <module>pedestal-ms-algorithm</module>
         <module>pedestal-ms-crawler</module>
     </modules>
 

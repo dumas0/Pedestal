@@ -1,0 +1,17 @@
+spring:
+  redis:
+    database: 0
+    host: 127.0.0.1
+    lettuce:
+      pool:
+        max_active: 16
+        max_wait: 3000
+    password: root
+    pool:
+      max_active: 16
+      max_wait: 3000
+    # sentinel:
+    #   master: sentinel-127.0.0.1-6403
+    #   nodes: 127.0.0.1:6404,127.0.0.2:6406,127.0.0.3:6404
+    timeout: 6000
+

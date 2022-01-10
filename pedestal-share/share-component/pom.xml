@@ -14,7 +14,7 @@
     <name>share-component</name>
     <version>1.0.0-SNAPSHOT</version>
     <description>
-
+        共享组件
     </description>
 
     <modules>

@@ -1,0 +1,6 @@
+server:
+  port: 8080
+
+pedestal:
+  log:
+    opt-enable: true

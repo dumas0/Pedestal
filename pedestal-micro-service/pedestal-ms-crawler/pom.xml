@@ -44,6 +44,22 @@
     <!--构建-->
     <build>
         <plugins>
+            <!-- Maven 仓库包漏洞安全扫描插件 -->
+            <plugin>
+                <groupId>org.owasp</groupId>
+                <artifactId>dependency-check-maven</artifactId>
+                <version>6.3.2</version>
+                <configuration>
+                    <autoUpdate>true</autoUpdate>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

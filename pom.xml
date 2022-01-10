@@ -7,7 +7,6 @@
         <groupId>com.dumas.anc</groupId>
         <artifactId>pedestatl-core</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>./pedestal-core</relativePath>
     </parent>
 
     <groupId>com.dumas.pedestal</groupId>
