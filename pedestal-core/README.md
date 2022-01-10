@@ -1,5 +1,4 @@
-# AppNuclearCenter
-App Baseic Core Framework.
+# Pedstal 核心依赖层
 
 ## 模块说明
 | 模块名称                       | 说明
