@@ -33,6 +33,7 @@ Pedestal
 │   ├─pedestal-ms-demo    -- 示例服务
 │   ├─pedestal-ms-alogrithm    -- 算法
 │   ├─pedestal-ms-crawler   -- 爬虫服务
+│   ├─pedestal-ms-patterns   -- 常用设计模式
 ├─pedestal-share    -- 共享模块
 │   ├─share-api     -- 共享 api
 │   ├─share-component   -- 共享组件
