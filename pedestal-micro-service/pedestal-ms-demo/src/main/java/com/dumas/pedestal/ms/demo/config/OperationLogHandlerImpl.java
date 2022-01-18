@@ -3,11 +3,13 @@ package com.dumas.pedestal.ms.demo.config;
 import com.dumas.pedestal.framework.logger.BusinessLogger;
 import com.dumas.pedestal.framework.springboot.web.intercepter.OperationLog;
 import com.dumas.pedestal.framework.springboot.web.intercepter.OperationLogHandler;
+import org.springframework.stereotype.Component;
 
 /**
  * @author dumas
  * @date 2022/01/10 2:04 PM
  */
+@Component
 public class OperationLogHandlerImpl implements OperationLogHandler {
     @Override
     public void handleOperationLog(OperationLog operationLog) {

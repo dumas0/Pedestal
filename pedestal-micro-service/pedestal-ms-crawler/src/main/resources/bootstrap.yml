@@ -1,27 +1,24 @@
-#全局项目整体配置
 spring:
   application:
-    name: pedestal-ms-crawler
-
+    name: @artifactId@
   cloud:
     nacos:
-      #####################
-      # 配置中心
-      #####################
+      discovery:
+        server-addr: ${NACOS_HOST:172.26.32.1}:${NACOS_PORT:8848}
+        username: nacos
+        password: nacos
       config:
-        server-addr: 172.26.32.1:8848
-        # supernacos.icloud.cn:80
-        # 配置分组（一般按照服务划分）
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        file-extension: yml
+        namespace: @nacos.namespace@
         group: DEFAULT_GROUP
-        # 配置文件拓展名称
-        file-extension: yaml
-        # 配置文件命名空间（一般用来划分不同的环境）
-
-        # 额外配置
-        extension-configs:
-          - data-id: pedestal-logger.yaml
-          - data-id: pedestal-db.yaml
-          - data-id: pedestal-redis.yaml
-        # 共享配置
         shared-configs:
-        namespace: b0158f91-badd-423f-bdc8-b8dce028bc6e
+          - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+        username: ${spring.cloud.nacos.discovery.username}
+        password: ${spring.cloud.nacos.discovery.password}
+        extension-configs:
+          - data-id: pedestal-logger.yml
+          - data-id: pedestal-db.yml
+          - data-id: pedestal-redis.yml
+  profiles:
+    active: @profiles.active@
