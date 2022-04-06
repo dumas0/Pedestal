@@ -12,7 +12,7 @@
 
     <artifactId>anc-framework-mongodb</artifactId>
     <name>anc-framework-mongodb</name>
-    <version>${anc.version}</version>
+    <version>1.0.0-SNAPSHOT</version>
     <description>
         SpringBoot集成mongodb
     </description>

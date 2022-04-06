@@ -7,6 +7,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.3.9.RELEASE</version>
+        <relativePath/>
     </parent>
 
     <groupId>com.dumas.anc</groupId>
@@ -42,7 +43,7 @@
         <!-- messagePack -->
         <msgpack.version>0.6.12</msgpack.version>
         <!--工具-->
-        <jackson.databind.version>2.11.3</jackson.databind.version>
+        <jackson.databind.version>2.13.2.2</jackson.databind.version>
         <commons-lang3.version>3.9</commons-lang3.version>
         <commons-pool2.version>2.6.2</commons-pool2.version>
         <commons-collections4.version>4.4</commons-collections4.version>

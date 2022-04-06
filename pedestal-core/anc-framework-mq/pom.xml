@@ -11,7 +11,7 @@
 
     <artifactId>anc-framework-mq</artifactId>
     <name>anc-framework-mq</name>
-    <version>${anc.version}</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <description>
         消息队列框架封装

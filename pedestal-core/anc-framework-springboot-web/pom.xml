@@ -11,7 +11,7 @@
 
     <artifactId>anc-framework-springboot-web</artifactId>
     <name>anc-framework-springboot-web</name>
-    <version>${anc.version}</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <description>
         Web项目基础框架封装

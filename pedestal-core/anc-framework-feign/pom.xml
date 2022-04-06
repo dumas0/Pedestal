@@ -11,7 +11,7 @@
 
     <artifactId>anc-framework-feign</artifactId>
     <name>anc-framework-feign</name>
-    <version>${anc.version}</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <description>
         feign封装

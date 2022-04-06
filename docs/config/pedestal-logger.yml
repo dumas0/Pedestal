@@ -1,0 +1,8 @@
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfiguration: ERROR
+log:
+  path: /data/www/logs/apps/
