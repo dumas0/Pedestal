@@ -12,7 +12,7 @@
     <!--当前模块-->
     <artifactId>anc-common-model</artifactId>
     <name>anc-common-model</name>
-    <version>${anc.version}</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <description>通用数据模型</description>
 

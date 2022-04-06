@@ -11,7 +11,7 @@
 
     <artifactId>anc-framework-swagger</artifactId>
     <name>anc-framework-swagger</name>
-    <version>${anc.version}</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <description>
         Swagger在线接口文档封装

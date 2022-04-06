@@ -11,7 +11,7 @@
 
     <artifactId>anc-framework-discovery</artifactId>
     <name>anc-framework-discovery</name>
-    <version>${anc.version}</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <description>
         注册中心基础封装
