@@ -56,3 +56,6 @@ Pedestal
 
 ## 规约
 **开发规范** 和 **分支管理约定** 见内部文档
+[git-flow介绍](https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/git-flow/)
+[gitflow分支说明](http://www.ruanyifeng.com/blog/2012/07/git.html)
+[gitflow分支总结](https://juejin.cn/post/6844903634006720526)
