@@ -57,7 +57,7 @@
         <google-gson.version>2.9.0</google-gson.version>
         <guava-retrying.version>2.0.0</guava-retrying.version>
         <hutool.version>5.6.4</hutool.version>
-        <fastjson.version>1.2.76</fastjson.version>
+        <fastjson.version>2.0.7</fastjson.version>
         <retrofit.version>2.5.0</retrofit.version>
         <lomok.version>1.16.22</lomok.version>
         <dropwizard.metric.core.version>4.0.0</dropwizard.metric.core.version>
